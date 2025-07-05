@@ -1,0 +1,59 @@
+.wrap h1 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.ct-content-import__wrapper {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 5px 5px 10px 5px lightgray;
+}
+
+.form-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.form-table th,
+.form-table td {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	text-align: left;
+	font-size: 0.95em;
+}
+
+.form-table th {
+	background-color: #eaeaea;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.ct-import-progress__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+#ct-import-progress {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#ct-import-report {
+	background: lightgray;
+	padding: 10px 15px;
+	margin: 20px 0;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#ct-import-report p {
+	font-size: 16px;
+	font-weight: 500;
+}

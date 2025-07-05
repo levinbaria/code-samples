@@ -1,0 +1,49 @@
+@use "../../scss/abstracts";
+.post-lists {
+  &__post-type-tab {
+    .post-lists__tab-item {
+      &:hover {
+        button {
+          display: block;
+        }
+      }
+
+      &.active {
+        button {
+          &.remove-tab,
+          &.tab-left,
+          &.tab-right {
+            top: -14px;
+          }
+        }
+      }
+    }
+
+    button {
+      margin: 0 !important;
+      padding: 0 !important;
+      display: none;
+
+      &.add-card-button {
+        display: block;
+        line-height: 0;
+      }
+
+      &.remove-tab,
+      &.tab-left,
+      &.tab-right {
+        position: absolute;
+        height: auto;
+        top: -9px;
+      }
+
+      &.tab-left {
+        left: 14px;
+      }
+
+      &.tab-right {
+        left: 28px;
+      }
+    }
+  }
+}

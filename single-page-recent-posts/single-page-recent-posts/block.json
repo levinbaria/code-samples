@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "code-sample/single-page-recent-posts",
+  "version": "0.1.0",
+  "title": "Single Page Recent Posts",
+  "apiVersion": 3,
+  "icon": "editor-table",
+  "category": "code-sample",
+  "description": "Show Recent Posts based on single page based on the post type selected.",
+  "keywords": ["Recent Posts", "Post lists", "Single Page"],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "code-sample",
+  "attributes": {
+    "blockID": {
+      "type": "string",
+      "default": ""
+    },
+    "blockBgColor": {
+      "type": "string",
+      "default": ""
+    },
+    "sectionPadding": {
+      "type": "object",
+      "default": {
+        "top": "80px",
+        "right": "15px",
+        "bottom": "80px",
+        "left": "15px"
+      }
+    },
+    "isPreview": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "headingColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "headingBgColor": {
+      "type": "string",
+      "default": "#373BDF"
+    },
+    "selectedPostType": {
+      "type": "string",
+      "default": "posts"
+    },
+    "type": {
+      "type": "string",
+      "default": "recent"
+    },
+    "noOfPost": {
+      "type": "number",
+      "default": 5
+    },
+    "postTitleColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "postBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "removeContainer": {
+      "type": "boolean",
+      "default": false
+    }
+
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
